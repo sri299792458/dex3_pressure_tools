@@ -1,0 +1,294 @@
+# Explicit Dex3-1 right hand pressure taxel overlay.
+#
+# Seeded from docs/assets/dex3_right_pressure_mapping.png, sourced from:
+# https://www.mekosrl.it/post/n-2-2-unitree-g1-umanoide-robot-tutto-ci%C3%B2-che-c-%C3%A8-da-sapere-sviluppo-applicazioni-sdk-descriz
+# Validate placement with live touch on the physical hand.
+#
+# Edit xyz/scale/label_offset for placement. There is no grid-orientation
+# inference in the visualizer anymore.
+#
+# group/cell indexes read:
+#   HandState.press_sensor_state[group].pressure[cell]
+
+taxels:
+  # ID 0 thumb pad
+  - name: thumb_pad
+    group: 0
+    cell: 2
+    frame_id: right_hand_thumb_1_link
+    xyz: [0.016000, 0.021000, 0.005000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.002000, 0.008000, 0.008000]
+    label_offset: [0.008000, 0.000000, 0.000000]
+  - name: thumb_pad
+    group: 0
+    cell: 11
+    frame_id: right_hand_thumb_1_link
+    xyz: [0.016000, 0.031000, 0.005000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.002000, 0.008000, 0.008000]
+    label_offset: [0.008000, 0.000000, 0.000000]
+  - name: thumb_pad
+    group: 0
+    cell: 0
+    frame_id: right_hand_thumb_1_link
+    xyz: [0.016000, 0.021000, -0.005000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.002000, 0.008000, 0.008000]
+    label_offset: [0.008000, 0.000000, 0.000000]
+  - name: thumb_pad
+    group: 0
+    cell: 9
+    frame_id: right_hand_thumb_1_link
+    xyz: [0.016000, 0.031000, -0.005000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.002000, 0.008000, 0.008000]
+    label_offset: [0.008000, 0.000000, 0.000000]
+
+  # ID 1 thumb tip
+  - name: thumb_tip
+    group: 1
+    cell: 3
+    frame_id: right_hand_thumb_2_link
+    xyz: [0.011000, 0.034500, 0.000000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.002000, 0.010000, 0.007000]
+    label_offset: [0.008000, 0.000000, 0.000000]
+  - name: thumb_tip
+    group: 1
+    cell: 8
+    frame_id: right_hand_thumb_2_link
+    xyz: [0.011000, 0.022500, -0.006000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.002000, 0.010000, 0.007000]
+    label_offset: [0.008000, 0.000000, 0.000000]
+  - name: thumb_tip
+    group: 1
+    cell: 6
+    frame_id: right_hand_thumb_2_link
+    xyz: [0.011000, 0.022500, 0.006000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.002000, 0.010000, 0.007000]
+    label_offset: [0.008000, 0.000000, 0.000000]
+
+  # ID 2 lower finger pad
+  - name: lower_finger_pad
+    group: 2
+    cell: 0
+    frame_id: right_hand_middle_0_link
+    xyz: [0.027500, 0.016000, 0.005000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.009000, 0.002000, 0.008000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: lower_finger_pad
+    group: 2
+    cell: 9
+    frame_id: right_hand_middle_0_link
+    xyz: [0.038500, 0.016000, 0.005000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.009000, 0.002000, 0.008000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: lower_finger_pad
+    group: 2
+    cell: 2
+    frame_id: right_hand_middle_0_link
+    xyz: [0.027500, 0.016000, -0.005000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.009000, 0.002000, 0.008000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: lower_finger_pad
+    group: 2
+    cell: 11
+    frame_id: right_hand_middle_0_link
+    xyz: [0.038500, 0.016000, -0.005000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.009000, 0.002000, 0.008000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+
+  # ID 3 lower finger tip
+  - name: lower_finger_tip
+    group: 3
+    cell: 3
+    frame_id: right_hand_middle_1_link
+    xyz: [0.034500, 0.011000, 0.000000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.007000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: lower_finger_tip
+    group: 3
+    cell: 6
+    frame_id: right_hand_middle_1_link
+    xyz: [0.022500, 0.011000, -0.006000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.007000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: lower_finger_tip
+    group: 3
+    cell: 8
+    frame_id: right_hand_middle_1_link
+    xyz: [0.022500, 0.011000, 0.006000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.007000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+
+  # ID 4 upper finger pad
+  - name: upper_finger_pad
+    group: 4
+    cell: 0
+    frame_id: right_hand_index_0_link
+    xyz: [0.027500, 0.016000, 0.005000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.009000, 0.002000, 0.008000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: upper_finger_pad
+    group: 4
+    cell: 9
+    frame_id: right_hand_index_0_link
+    xyz: [0.038500, 0.016000, 0.005000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.009000, 0.002000, 0.008000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: upper_finger_pad
+    group: 4
+    cell: 2
+    frame_id: right_hand_index_0_link
+    xyz: [0.027500, 0.016000, -0.005000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.009000, 0.002000, 0.008000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: upper_finger_pad
+    group: 4
+    cell: 11
+    frame_id: right_hand_index_0_link
+    xyz: [0.038500, 0.016000, -0.005000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.009000, 0.002000, 0.008000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+
+  # ID 5 upper finger tip
+  - name: upper_finger_tip
+    group: 5
+    cell: 3
+    frame_id: right_hand_index_1_link
+    xyz: [0.034500, 0.011000, 0.000000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.007000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: upper_finger_tip
+    group: 5
+    cell: 6
+    frame_id: right_hand_index_1_link
+    xyz: [0.022500, 0.011000, -0.006000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.007000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: upper_finger_tip
+    group: 5
+    cell: 8
+    frame_id: right_hand_index_1_link
+    xyz: [0.022500, 0.011000, 0.006000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.007000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+
+  # ID 6 palm middle side
+  - name: palm_middle_side
+    group: 6
+    cell: 2
+    frame_id: right_hand_palm_link
+    xyz: [0.055000, 0.018000, -0.020000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.010000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: palm_middle_side
+    group: 6
+    cell: 0
+    frame_id: right_hand_palm_link
+    xyz: [0.067000, 0.018000, -0.020000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.010000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: palm_middle_side
+    group: 6
+    cell: 11
+    frame_id: right_hand_palm_link
+    xyz: [0.055000, 0.018000, -0.032000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.010000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: palm_middle_side
+    group: 6
+    cell: 9
+    frame_id: right_hand_palm_link
+    xyz: [0.067000, 0.018000, -0.032000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.010000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+
+  # ID 7 palm center
+  - name: palm_center
+    group: 7
+    cell: 2
+    frame_id: right_hand_palm_link
+    xyz: [0.057000, 0.019000, 0.006000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.010000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: palm_center
+    group: 7
+    cell: 0
+    frame_id: right_hand_palm_link
+    xyz: [0.069000, 0.019000, 0.006000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.010000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: palm_center
+    group: 7
+    cell: 11
+    frame_id: right_hand_palm_link
+    xyz: [0.057000, 0.019000, -0.006000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.010000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: palm_center
+    group: 7
+    cell: 9
+    frame_id: right_hand_palm_link
+    xyz: [0.069000, 0.019000, -0.006000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.010000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+
+  # ID 8 palm index side
+  - name: palm_index_side
+    group: 8
+    cell: 2
+    frame_id: right_hand_palm_link
+    xyz: [0.055000, 0.018000, 0.032000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.010000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: palm_index_side
+    group: 8
+    cell: 0
+    frame_id: right_hand_palm_link
+    xyz: [0.067000, 0.018000, 0.032000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.010000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: palm_index_side
+    group: 8
+    cell: 11
+    frame_id: right_hand_palm_link
+    xyz: [0.055000, 0.018000, 0.020000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.010000]
+    label_offset: [0.000000, 0.008000, 0.000000]
+  - name: palm_index_side
+    group: 8
+    cell: 9
+    frame_id: right_hand_palm_link
+    xyz: [0.067000, 0.018000, 0.020000]
+    rpy: [0.0, 0.0, 0.0]
+    scale: [0.010000, 0.002000, 0.010000]
+    label_offset: [0.000000, 0.008000, 0.000000]

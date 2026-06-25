@@ -1,0 +1,13 @@
+build/
+install/
+log/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.colcon/
+
+dex3_pressure_calibration_*.json
+dex3_pressure_raw_audit_*.json
+dex3_pressure_session_*.json
+dex3_pressure_session_*.npz
