@@ -1,10 +1,21 @@
 # Dex3 Pressure Tools
 
-Read-only ROS 2 Humble tools for visualizing, probing, and recording Unitree
+Read-only ROS 2 Humble tools for visualizing, probing and recording Unitree
 Dex3-1 right-hand tactile pressure data.
 
-This repository was created for the lab's right Dex3-1 hand marked `214-R-T`.
-It does not publish Dex3 command messages.
+[![Dex3 taxel locations and pressure-count colors in RViz](docs/assets/dex3-tactile-rviz-demo.jpg)](https://sri299792458.github.io/g1-research-docs/sensing/pressure.html#seeing-the-pressure-display)
+
+*Watch the RViz pressure display. Taxel colors show sensor counts and changes
+relative to a baseline, not calibrated contact forces.*
+
+**[Pressure sensing and mapping study](https://sri299792458.github.io/g1-research-docs/sensing/pressure.html)** ·
+[Full G1 guide](https://sri299792458.github.io/g1-research-docs/) ·
+[Documentation source](https://github.com/sri299792458/g1-research-docs)
+
+This repository was developed for the lab's right Dex3-1 hand marked `214-R-T`.
+It provides passive recording, visualization and tools for relating reported
+channels to physical sensor locations. It does not publish Dex3 commands.
+The guide explains the observed signals, mapping evidence and remaining limits.
 
 ## What Is Included
 
